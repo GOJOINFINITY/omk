@@ -11,7 +11,7 @@ function setup() {
   engine = Engine.create()
   world = engine.world;
   ground= new Ground(600,395,1200,20)
- 
+ platform= new Ground(150,305,300,170)
 
   box1= new Box(700,320,70,70)
   box2= new Box(920,320,70,70)
@@ -50,4 +50,5 @@ box5.display()
 log3.display()
 log4.display()
  bird.display()
+ platform.display()
 }
