@@ -29,7 +29,8 @@ function setup() {
   log3 = new Log(760,150,150,20,-PI/4)
   log4 = new Log(870,150,150,20,PI/4)
 bird = new Bird(100,100,50,50)
-  
+ pig = new Pig(100,169,69,69)
+ slingshot= new Slingshot(bird.body,pig.body)
 }
 
 function draw() {
@@ -51,4 +52,6 @@ log3.display()
 log4.display()
  bird.display()
  platform.display()
+ pig.display()
+ slingshot.display()
 }
